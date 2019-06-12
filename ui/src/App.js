@@ -7,6 +7,8 @@ import {
 
 import Home from './components/Home.js'
 import Profile from './components/Profile.js'
+import Attractions from './components/Attractions'
+import Attraction from './components/Attraction'
 
 import Client from "./Client";
 
@@ -42,6 +44,8 @@ class App extends Component {
           {/* <Route path="/:tech" component={Tech} /> */}
           <Route path="/" exact render={(props) => <Home {...props} data={this.state.data} />} />
           <Route path="/profile" exact render={(props) => <Profile {...props} data={this.state.data} />} />
+          <Route path="/attractions" exact render={(props) => <Attractions {...props} data={this.state.data} />} />
+          <Route path="/attraction" exact render={(props) => <Attraction {...props} data={this.state.data} />} />
         </div>
       </Router>
     );
